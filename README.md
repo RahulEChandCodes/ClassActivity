@@ -10,4 +10,4 @@ A simple, responsive portfolio website built with HTML and CSS. This portfolio s
 - Uses DM Sans font family
 
 ## View Website
-You can view the live website at [GITHUB_PAGES_URL]
+You can view the live website at https://github.com/RahulEChandCodes/ClassActivity
