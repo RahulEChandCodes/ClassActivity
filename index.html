@@ -131,15 +131,6 @@
     </section>
 
     <script>
-      ["click", "route"].forEach((eType) => {
-        window.addEventListener(eType, (event) => {
-          console.log({
-            Timestamp_of_event: event.timeStamp,
-            type_of_event: event.type,
-            event_Object: event.target,
-          });
-        });
-      });
       document.addEventListener("DOMContentLoaded", function () {
         const hamburger = document.getElementById("hamburger");
         const navMenu = document.getElementById("nav-menu");
@@ -154,6 +145,16 @@
           link.addEventListener("click", function () {
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
+          });
+        });
+
+        ["click", "route"].forEach((eType) => {
+          window.addEventListener(eType, (event) => {
+            console.log({
+              Timestamp_of_event: event.timeStamp,
+              type_of_event: event.type,
+              event_Object: event.target,
+            });
           });
         });
       });
